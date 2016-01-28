@@ -1429,7 +1429,7 @@ Public Class StanfordApp
         If rs2.Read() Then
             Response.Write("<div class=""item""><div class=""item-label"">" & rs("label") & "</div>")
             Response.Write("<div class=""item-controls""><select name=""q" & rs("id") & """>")
-            Response.Write("<option selected=""selected"" class=""group-title"" value=""null"">Select" & rs("label") &"</option>")  'Adding label in default option for Revamp
+            Response.Write("<option selected=""selected"" class=""group-title"" value=""null"">SELECT " & rs("label") &"</option>")  'Adding label in default option for Revamp
             Do
                 Response.Write("<option value=""" & rs2("id") & """")
                 If CStr(subValue) = CStr(rs2("id")) Then Response.Write(" selected=""selected"" ")
@@ -1625,7 +1625,7 @@ Public Class StanfordApp
         If rs2.Read() Then
             Response.Write("<div class=""item""><div class=""item-label"">" & rs("label") & "</div>")
             Response.Write("<div class=""item-controls""><select name=""q" & rs("id") & """>")
-            Response.Write("<option selected=""selected"" class=""group-title"" value=""null"">Select" & rs("label") & "</option>") 'Adding label in default option for Revamp
+            Response.Write("<option selected=""selected"" class=""group-title"" value=""null"">SELECT " & rs("label") & "</option>") 'Adding label in default option for Revamp
             Do
                 Response.Write("<option value=""" & rs2("id") & """")
                 If CStr(subValue) = CStr(rs2("id")) Then Response.Write(" selected=""selected"" ")
@@ -1690,7 +1690,7 @@ Public Class StanfordApp
             Response.Write("<div class=""item-controls""><select id=""q" & rs("id") & """  name=""q" & rs("id") & """ ")
             If rs("required") = True Then Response.Write("class=""validate[required] required"" ")
             Response.Write(">")
-            Response.Write("<option  class=""group-title"" value="""">Select" & rs("label") & "</option>") 'Adding label in default option for Revamp
+            Response.Write("<option  class=""group-title"" value="""">SELECT " & rs("label") & "</option>") 'Adding label in default option for Revamp
 
             Do
                 Response.Write("<option value=""" & rs2("id") & """")
@@ -1729,7 +1729,7 @@ Public Class StanfordApp
             If rs("required") = True Then Response.Write("class=""validate[required] required"" ")
 
             Response.Write(">")
-            Response.Write("<option class=""group-title"" value="""">Select" & rs("label") & "</option>") 'Adding label in default option for Revamp
+            Response.Write("<option class=""group-title"" value="""">SELECT " & rs("label") & "</option>") 'Adding label in default option for Revamp
 
             Response.Write("<option value=""F"" ")
             If CStr(subValue) = "F" Then Response.Write(" selected=""selected"" ")
