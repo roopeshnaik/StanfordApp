@@ -1,0 +1,96 @@
+Microsoft (R) Visual Basic Compiler version 12.0.31101
+for Visual Basic 11
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+D:\Source\GSB\StanfordApp\StanfordApp.vb(15) : warning BC40056: Namespace or type specified in the Imports 'powerviewPDF' doesn't contain any public member or cannot be found. Make sure the namespace or the type is defined and contains at least one public member. Make sure the imported element name doesn't use any aliases.
+
+Imports powerviewPDF
+        ~~~~~~~~~~~~
+D:\Source\GSB\StanfordApp\StanfordApp.vb(16) : warning BC40056: Namespace or type specified in the Imports 'FlatbridgeEncryption' doesn't contain any public member or cannot be found. Make sure the namespace or the type is defined and contains at least one public member. Make sure the imported element name doesn't use any aliases.
+
+Imports FlatbridgeEncryption
+        ~~~~~~~~~~~~~~~~~~~~
+D:\Source\GSB\StanfordApp\StanfordApp.vb(297) : warning BC42104: Variable 'body' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+                    body = body & arr1(loop1) & ":" & Request.Form(arr1(loop1)) & vbCrLf
+                           ~~~~                                                         
+D:\Source\GSB\StanfordApp\StanfordApp.vb(1880) : warning BC42104: Variable 'selArray' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+                    For I = 0 To selArray.Length - 1
+                                 ~~~~~~~~           
+D:\Source\GSB\StanfordApp\StanfordApp.vb(1930) : warning BC42104: Variable 'selArray' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+                    For Each thisObject As String In selArray
+                                                     ~~~~~~~~
+D:\Source\GSB\StanfordApp\StanfordApp.vb(1977) : warning BC42104: Variable 'selArray' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+                    For Each thisObject As String In selArray
+                                                     ~~~~~~~~
+D:\Source\GSB\StanfordApp\StanfordApp.vb(2308) : warning BC42104: Variable 'application_id' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+        sql = "select display_order from application_page_assigned where application_id=" & application_id & " and application_page_id=" & pageFrom
+                                                                                            ~~~~~~~~~~~~~~                                         
+D:\Source\GSB\StanfordApp\StanfordApp.vb(2349) : warning BC42104: Variable 'application_status' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+            sql = "ApplicationSubmitMultiple " & CInt(Request.Form("course_id")) & "," & CInt(application_status) & "," & CInt(application_user_id)
+                                                                                              ~~~~~~~~~~~~~~~~~~                                   
+D:\Source\GSB\StanfordApp\StanfordApp.vb(2358) : warning BC42104: Variable 'application_submission_id' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+            sql = "delete from Application_Page_Submission where application_page_id=" & CInt(Request.Form("page_id")) & " and application_submission_id=" & CInt(application_submission_id)
+                                                                                                                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~ 
+D:\Source\GSB\StanfordApp\StanfordApp.vb(2534) : warning BC42104: Variable 'sql2' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+                        LogError(ex.ToString() & sql & ":" & sql2)
+                                                             ~~~~ 
+D:\Source\GSB\StanfordApp\StanfordApp.vb(2567) : warning BC42104: Variable 'sql' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+            Response.Write(ex.ToString() & sql)
+                                           ~~~ 
+D:\Source\GSB\StanfordApp\StanfordApp.vb(2686) : warning BC42104: Variable 'application_id' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+            If application_id = 0 Then
+               ~~~~~~~~~~~~~~         
+D:\Source\GSB\StanfordApp\StanfordApp.vb(2809) : warning BC42104: Variable 'application_id' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+        If application_id = 0 Then
+           ~~~~~~~~~~~~~~         
+D:\Source\GSB\StanfordApp\StanfordApp.vb(3003) : warning BC42104: Variable 'application_id' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+        sql = "GetApplicationInformation " & CInt(Session("application_user_id")) & "," & CInt(Request.QueryString("id")) & "," & CInt(application_id)
+                                                                                                                                       ~~~~~~~~~~~~~~ 
+D:\Source\GSB\StanfordApp\StanfordApp.vb(3019) : warning BC42104: Variable 'fee' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+        If fee = 0 Then
+           ~~~         
+D:\Source\GSB\StanfordApp\StanfordApp.vb(3200) : warning BC42104: Variable 'startMonth' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+                        If J = startMonth Then
+                               ~~~~~~~~~~     
+D:\Source\GSB\StanfordApp\StanfordApp.vb(3201) : warning BC42104: Variable 'endMonth' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+                            If startMonth = endMonth Then
+                                            ~~~~~~~~     
+D:\Source\GSB\StanfordApp\StanfordApp.vb(3202) : warning BC42104: Variable 'startDay' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+                                If startDay = endDay Then
+                                   ~~~~~~~~              
+D:\Source\GSB\StanfordApp\StanfordApp.vb(3202) : warning BC42104: Variable 'endDay' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+                                If startDay = endDay Then
+                                              ~~~~~~     
+D:\Source\GSB\StanfordApp\StanfordApp.vb(3212) : warning BC42104: Variable 'endYear' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+                                    If endYear > startYear Then
+                                       ~~~~~~~                 
+D:\Source\GSB\StanfordApp\StanfordApp.vb(3212) : warning BC42104: Variable 'startYear' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+                                    If endYear > startYear Then
+                                                 ~~~~~~~~~     
+D:\Source\GSB\StanfordApp\StanfordApp.vb(3213) : warning BC42104: Variable 'startMonthName' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+                                        TD(J) = "<td class=""flagged"" colspan=""" & endMonth - startMonth + 1 & """><a style=""background-color:#f3e8cc; color:#a63a00; font-weight:700;"" href=""" & rs2("link_to_program_detail") & """>" & startMonthName & " " & startDay & ", " & startYear & " - " & endMonthName & " " & endDay & ", " & endYear & "</a></td>" & vbCrLf
+                                                                                                                                                                                                                                               ~~~~~~~~~~~~~~                                                                                                                  
+D:\Source\GSB\StanfordApp\StanfordApp.vb(3213) : warning BC42104: Variable 'endMonthName' is used before it has been assigned a value. A null reference exception could result at runtime.
+
+                                        TD(J) = "<td class=""flagged"" colspan=""" & endMonth - startMonth + 1 & """><a style=""background-color:#f3e8cc; color:#a63a00; font-weight:700;"" href=""" & rs2("link_to_program_detail") & """>" & startMonthName & " " & startDay & ", " & startYear & " - " & endMonthName & " " & endDay & ", " & endYear & "</a></td>" & vbCrLf
+                                                                                                                                                                                                                                                                                                            ~~~~~~~~~~~~                                                       
