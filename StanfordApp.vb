@@ -1429,7 +1429,7 @@ Public Class StanfordApp
         If rs2.Read() Then
             Response.Write("<div class=""item""><div class=""item-label"">" & rs("label") & "</div>")
             Response.Write("<div class=""item-controls""><select name=""q" & rs("id") & """>")
-            Response.Write("<option selected=""selected"" class=""group-title"" value=""null"">SELECT " & rs("label") &"</option>")  'Adding label in default option for Revamp
+            Response.Write("<option selected=""selected"" class=""group-title"" value=""null"">Select " & rs("label") &"</option>")  'Adding label in default option for Revamp
             Do
                 Response.Write("<option value=""" & rs2("id") & """")
                 If CStr(subValue) = CStr(rs2("id")) Then Response.Write(" selected=""selected"" ")
@@ -1625,7 +1625,7 @@ Public Class StanfordApp
         If rs2.Read() Then
             Response.Write("<div class=""item""><div class=""item-label"">" & rs("label") & "</div>")
             Response.Write("<div class=""item-controls""><select name=""q" & rs("id") & """>")
-            Response.Write("<option selected=""selected"" class=""group-title"" value=""null"">SELECT " & rs("label") & "</option>") 'Adding label in default option for Revamp
+            Response.Write("<option selected=""selected"" class=""group-title"" value=""null"">Select " & rs("label") & "</option>") 'Adding label in default option for Revamp
             Do
                 Response.Write("<option value=""" & rs2("id") & """")
                 If CStr(subValue) = CStr(rs2("id")) Then Response.Write(" selected=""selected"" ")
@@ -1690,7 +1690,7 @@ Public Class StanfordApp
             Response.Write("<div class=""item-controls""><select id=""q" & rs("id") & """  name=""q" & rs("id") & """ ")
             If rs("required") = True Then Response.Write("class=""validate[required] required"" ")
             Response.Write(">")
-            Response.Write("<option  class=""group-title"" value="""">SELECT " & rs("label") & "</option>") 'Adding label in default option for Revamp
+            Response.Write("<option  class=""group-title"" value="""">Select " & rs("label") & "</option>") 'Adding label in default option for Revamp
 
             Do
                 Response.Write("<option value=""" & rs2("id") & """")
@@ -1729,7 +1729,7 @@ Public Class StanfordApp
             If rs("required") = True Then Response.Write("class=""validate[required] required"" ")
 
             Response.Write(">")
-            Response.Write("<option class=""group-title"" value="""">SELECT " & rs("label") & "</option>") 'Adding label in default option for Revamp
+            Response.Write("<option class=""group-title"" value="""">Select " & rs("label") & "</option>") 'Adding label in default option for Revamp
 
             Response.Write("<option value=""F"" ")
             If CStr(subValue) = "F" Then Response.Write(" selected=""selected"" ")
@@ -2181,7 +2181,7 @@ Public Class StanfordApp
         Response.Write("<div class=""form-section-wrap"">")
 
         Response.Write("<div class=""section-row"" id=""pr-educ-entry1"">")
-        Response.Write("<ul><li><div class=""section-header"">SCHOOL / PROGRAM</div><br/><input type=""text"" size=""45"" name=""q_school_" & J & "_" & rs("id") & """  value=""" & school(J - 1) & """/></li><li><div class=""section-header"">START DATE<br/><span class=""body-emph"">(mm/dd/yyyy)</span></div><input type=""text"" class=""validate[custom[dateFormat]]"" size=""20"" name=""q_start_date_" & J & "_" & rs("id") & """ id=""q_start_date_" & J & "_" & rs("id") & """ value=""" & start_date(J - 1) & """/></li><li><div class=""section-header"">END DATE<br/><span class=""body-emph"">(mm/dd/yyyy)</span></div><input type=""text"" class=""validate[custom[dateFormat]]""  size=""20"" name=""q_end_date_" & J & "_" & rs("id") & """ id=""q_end_date_" & J & "_" & rs("id") & """   value=""" & end_date(J - 1) & """/></li></ul></div>")
+        Response.Write("<ul><li><div class=""section-header"">School / Program</div><br/><input type=""text"" size=""45"" name=""q_school_" & J & "_" & rs("id") & """  value=""" & school(J - 1) & """/></li><li><div class=""section-header"">Start Date<br/><span class=""body-emph"">(mm/dd/yyyy)</span></div><input type=""text"" class=""validate[custom[dateFormat]]"" size=""20"" name=""q_start_date_" & J & "_" & rs("id") & """ id=""q_start_date_" & J & "_" & rs("id") & """ value=""" & start_date(J - 1) & """/></li><li><div class=""section-header"">End Date<br/><span class=""body-emph"">(mm/dd/yyyy)</span></div><input type=""text"" class=""validate[custom[dateFormat]]""  size=""20"" name=""q_end_date_" & J & "_" & rs("id") & """ id=""q_end_date_" & J & "_" & rs("id") & """   value=""" & end_date(J - 1) & """/></li></ul></div>") 'Changes made for Revamp
 
 
 
